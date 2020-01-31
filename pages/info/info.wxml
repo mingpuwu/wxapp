@@ -1,2 +1,6 @@
 <!--pages/info/info.wxml-->
-<text>pages/info/info.wxml</text>
+<view>
+  <view class='main'>计划消费:{{plancost}}</view>
+  <view class='currentall'>当前总消费:{{currentall}}</view>
+  <view class='percent'>百分比:{{percent}}%</view>
+</view>

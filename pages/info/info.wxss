@@ -1,1 +1,5 @@
 /* pages/info/info.wxss */
+.main {
+  margin-left: auto;
+  margin-right: auto;
+}
