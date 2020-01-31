@@ -1,0 +1,8 @@
+<!--pages/current/current.wxml-->
+<view class='main'>
+  <view class='arg'>
+    <view>输入价格</view>
+  </view>
+  <input class="input" bindinput="currentcost" value="{{currentcost}}"></input>
+  <button class='button' bindtap="add">增加</button>
+</view>
