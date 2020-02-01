@@ -19,6 +19,18 @@ App({
   onShow: function (options) {
     var time = util.formatTime(new Date());
     this.globalData.time = time
+    console.log("日期是：", time[0],time[1],time[2],time[3],time[4],time[5],time[6],time[7],time[8],time[9],)
+    var day = Number(time[8])*10+Number(time[9])
+    console.log("日期：",day)
+    if (day == 1) {
+      var setflag = wx.getStorageSync('setflag')
+      if (!setflag) {
+        wx.setStorageSync('currentall', 0)
+        wx.setStorageSync('setflag', 1)
+      }
+    } else {
+      wx.setStorageSync('setflag', 0)
+    }
   },
 
   /**
