@@ -18,15 +18,15 @@
     "list":[
       {
         "pagePath": "pages/current/current",
-        "iconPath": "image/3.png",
-        "selectedIconPath": "image/3.png",
-        "text": "记录"
-      },
-      {
-        "pagePath": "pages/history/history",
         "iconPath": "image/1.png",
         "selectedIconPath": "image/1.png",
         "text": "消费"
+      },
+      {
+        "pagePath": "pages/history/history",
+        "iconPath": "image/3.png",
+        "selectedIconPath": "image/3.png",
+        "text": "记录"
       },
       {
         "pagePath": "pages/info/info",

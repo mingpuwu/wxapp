@@ -2,5 +2,9 @@
 <view>
   <view class='main'>计划消费:{{plancost}}</view>
   <view class='currentall'>当前总消费:{{currentall}}</view>
+  <view class='remain'>剩余:{{remain}}</view>
   <view class='percent'>百分比:{{percent}}%</view>
+  <view class="container">
+    <canvas canvas-id="pieCanvas" class="canvas" style="height:350px" bindtouchstart="touchHandler"></canvas>
+  </view>
 </view>
