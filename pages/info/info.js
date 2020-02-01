@@ -15,10 +15,29 @@ Page({
     remain:0
   },
 
+  date: {
+    Jan:31,
+    Feb:28,
+    Mar:31,
+    Apr:30,
+    May:31,
+    Jun:30,
+    Jul:31,
+    Aug:31,
+    Sep:30,
+    Oct:31,
+    Nov:30,
+    Dec:31  
+  },
+
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
+
+    var time = app.globalData.time
+    console.log("获取到app日期是：",time)
+
     var currentall_string = wx.getStorageSync('currentall')
     this.setData({ currentall: Number(currentall_string) })
     console.log("当前总消费：", this.data.currentall)
