@@ -6,7 +6,13 @@ Page({
    */
   data: {
     currentall:null,
-    currentcost:null
+    currentcost:null,
+    items: [
+      { name: 'eat', value: '饮食',checked:'true'},
+      { name: 'veh', value: '交通'},
+      { name: 'pla', value: '娱乐'},
+      { name: 'sho', value: '购物'},
+    ]
   },
 
   /**
@@ -79,6 +85,10 @@ Page({
 
   currentcost: function(e) {
     this.data.currentcost = e.detail.value
+  },
+
+  radioChange: function(e) {
+    console.log("选择框选择：",e.detail.value)
   },
 
   add: function() {

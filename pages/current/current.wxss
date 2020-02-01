@@ -25,3 +25,9 @@
   height: 50px;
   background-color: gold;
 }
+
+.radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

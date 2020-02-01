@@ -4,5 +4,12 @@
     <view>输入价格</view>
   </view>
   <input class="input" bindinput="currentcost" value="{{currentcost}}"></input>
+
+  <radio-group class="radio-group" bindchange="radioChange">
+    <radio class="radio" wx:for="{{items}}" wx:key='key' value="{{item.name}}" checked="{{item.checked}}">
+      <text>{{item.value}}</text>
+    </radio>
+  </radio-group>
+
   <button class='button' bindtap="add">增加</button>
 </view>
